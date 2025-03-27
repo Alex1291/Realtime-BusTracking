@@ -1,0 +1,53 @@
+.googleContent1 {
+  .google {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 2px 4px 10px 1px rgba(165, 165, 165, 0.47);
+  }
+
+  .markerPositions {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 2px 4px 10px 1px rgba(165, 165, 165, 0.47);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    h3 {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+
+    .infoContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centers content vertically */
+      align-items: center; /* Centers content horizontally */
+      text-align: center; /* Ensures text inside is centered */
+    }
+
+    .info {
+      margin-bottom: 20px;
+      text-align: center; /* Centers text inside */
+      width: fit-content;
+
+      .inner-info {
+        width: 300px;
+        text-align: left;
+      }
+    }
+  }
+
+  .totalDistance {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 2px 4px 10px 1px rgba(165, 165, 165, 0.47);
+
+    h3 {
+      text-align: center;
+    }
+  }
+}

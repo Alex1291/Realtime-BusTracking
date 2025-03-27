@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../public/media/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .login-container {
+    margin: 0 auto;
+    max-width: 410px;
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+    .form-title {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1.87rem;
+    }
+
+    .login-form .input-wrapper {
+      height: 54px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .login-form .input-field {
+      width: 100%;
+      height: 100%;
+      outline: none;
+      font-size: 1.06rem;
+      border-radius: 0.31rem;
+      border: 1px solid #849aff;
+      padding: 0px 1.25rem 0 3.12rem;
+      transition: 0.2s ease;
+    }
+
+    .login-form .input-field:focus {
+      border-color: #0230ff;
+    }
+
+    .login-form .input-field::placeholder {
+      color: #acacac;
+    }
+
+    .login-form .input-wrapper img {
+      position: absolute;
+      top: 50%;
+      height: 100%;
+      display: flex;
+      color: #a395e0;
+      align-items: center;
+      transform: translateY(-50%);
+      transition: 0.2s ease;
+      left: 0.93rem;
+      pointer-events: none;
+      filter: grayscale(100%);
+      width: 25px;
+    }
+
+    .login-form .login-button {
+      border: none;
+      outline: none;
+      width: 100%;
+      height: 54px;
+      color: #fff;
+      font-size: 1.125rem;
+      font-weight: 500;
+      cursor: pointer;
+      margin-top: 1.19rem;
+      border-radius: 0.31rem;
+      background: #0230ff;
+      transition: 0.3s ease;
+    }
+
+    .login-form .login-button:hover {
+      background: #001bb5;
+    }
+  }
+}

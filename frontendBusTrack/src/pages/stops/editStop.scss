@@ -1,0 +1,60 @@
+.editStop {
+  width: 100%;
+  display: flex;
+
+  .editStopContainer {
+    flex: 6;
+    background-color: rgb(238, 238, 238);
+
+    .editStopContent {
+      padding: 20px 40px;
+    }
+
+    .top {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px 40px;
+      box-shadow: 2px 4px 10px 1px rgba(165, 165, 165, 0.47);
+
+      h2 {
+        font-size: 30px;
+        font-weight: 600;
+      }
+
+      .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .backLink,
+        .editLink {
+          text-decoration: none;
+          color: white;
+          font-size: 16px;
+          font-weight: 500;
+          background-color: #0230ff;
+          border: 2px solid #0230ff;
+          padding: 8px 30px;
+          margin-left: 15px;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          display: inline-block;
+          text-align: center;
+
+          &:hover {
+            background-color: white;
+            color: #0230ff;
+            border-color: #0230ff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,222 @@
+.datatable {
+  padding: 20px 40px;
+
+  .datatableTitle {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 2px 4px 10px 1px rgba(165, 165, 165, 0.47);
+
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .addNewLink {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #0230ff;
+        border: 2px solid #0230ff;
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        text-align: center;
+
+        &:hover {
+          background-color: white;
+          color: #0230ff;
+          border-color: #0230ff;
+        }
+      }
+
+      .infoLink {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover img {
+          filter: brightness(0) saturate(100%) invert(13%) sepia(93%)
+            saturate(7473%) hue-rotate(230deg) brightness(95%) contrast(104%);
+        }
+
+        img {
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .dataGrid {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 2px 4px 10px 1px rgba(165, 165, 165, 0.47);
+    width: 100%;
+
+    // svg {
+    //   fill: white;
+    // }
+
+    .cell {
+      border: 1px solid #dee2e6;
+      display: flex;
+    }
+
+    .MuiDataGrid-row {
+      height: 70px;
+    }
+
+    .MuiDataGrid-columnHeaderTitle {
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: white;
+    }
+
+    .MuiDataGrid-toolbarContainer {
+      margin-bottom: 20px;
+    }
+
+    .MuiDataGrid-row--borderBottom.css-yseucu-MuiDataGrid-columnHeaderRow {
+      background-color: #0230ff;
+    }
+
+    .even {
+      background-color: #0000000d;
+    }
+
+    .odd {
+      background-color: white;
+    }
+
+    .MuiDataGrid-toolbarContainer {
+      flex-direction: row-reverse;
+
+      .css-1ccsd5i-MuiButtonBase-root-MuiButton-root {
+        background-color: #0230ff;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #0230ff;
+        color: white;
+
+        &:hover {
+          background-color: white;
+          color: #0230ff;
+          border: 1px solid #0230ff;
+
+          svg {
+            fill: #0230ff;
+          }
+        }
+      }
+    }
+
+    .cellWithImg {
+      display: flex;
+      align-items: center;
+
+      .cellImg {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+
+        box-shadow: 2px 4px 5px 1px rgba(119, 119, 119, 0.47);
+      }
+    }
+
+    .cellWithStatus {
+      width: 100%;
+
+      &.Active span,
+      &.Yes span {
+        padding: 5px;
+        background-color: rgba(0, 128, 0, 0.384);
+        color: green;
+        border-radius: 8px;
+      }
+
+      &.Pending span {
+        padding: 5px;
+        background-color: rgba(255, 217, 0, 0.281);
+        color: goldenrod;
+        border-radius: 8px;
+      }
+      &.Inactive span,
+      &.Expired span,
+      &.No span {
+        padding: 5px;
+        background-color: rgba(255, 94, 94, 0.274);
+        color: crimson;
+        border-radius: 8px;
+      }
+    }
+
+    .cellAction {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      .viewStopsButton a {
+        background-color: rgb(255, 232, 189);
+        display: flex;
+        padding: 8px;
+        border-radius: 5px;
+      }
+
+      .viewStopsButton img {
+        width: 14px;
+        cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(10%) sepia(100%)
+          saturate(5000%) hue-rotate(360deg) brightness(50%) contrast(120%);
+      }
+
+      .viewButton a {
+        background-color: rgb(247, 199, 247);
+        display: flex;
+        padding: 8px;
+        border-radius: 5px;
+      }
+
+      .viewButton img {
+        width: 14px;
+        cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(10%) sepia(100%)
+          saturate(5000%) hue-rotate(360deg) brightness(50%) contrast(120%);
+      }
+
+      .deleteButton {
+        background-color: rgb(255, 190, 190);
+        display: flex;
+        padding: 8px;
+        border-radius: 5px;
+      }
+
+      .deleteButton img {
+        width: 14px;
+        cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(10%) sepia(100%)
+          saturate(5000%) hue-rotate(360deg) brightness(50%) contrast(120%);
+      }
+    }
+  }
+}

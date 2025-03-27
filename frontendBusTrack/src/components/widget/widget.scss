@@ -1,0 +1,38 @@
+.widget {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 4px 10px 1px rgba(165, 165, 165, 0.47);
+  border-radius: 10px;
+  height: 200px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-weight: bold;
+      font-size: 14px;
+      color: rgb(160, 160, 160);
+      text-align: center;
+    }
+
+    .link {
+      width: max-content;
+      font-size: 12px;
+      border-bottom: 1px solid gray;
+      cursor: pointer;
+      text-decoration: none;
+      color: #0230ff;
+    }
+
+    .counter {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+}

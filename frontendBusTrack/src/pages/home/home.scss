@@ -1,0 +1,46 @@
+.home {
+  display: flex;
+  width: 100%;
+
+  .homeContainer {
+    flex: 6;
+    background-color: rgb(238, 238, 238);
+
+    .homeContent {
+      padding: 20px 40px;
+    }
+
+    .top {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px 40px;
+      box-shadow: 2px 4px 10px 1px rgba(165, 165, 165, 0.47);
+    }
+
+    .bottom {
+      display: flex;
+      gap: 20px;
+    }
+
+    .bottom-2 {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px 40px;
+      box-shadow: 2px 4px 10px 1px rgba(165, 165, 165, 0.47);
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      h3 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
